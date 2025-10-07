@@ -1,0 +1,2 @@
+exports.success = (res, data = {}, status = 200) => res.status(status).json({ ok: true, data });
+exports.error = (res, message = 'Error', status = 500) => res.status(status).json({ ok: false, message });
